@@ -48,7 +48,7 @@ void loop()
   {
     
   Serial.println("NOT DETECTED");
-  digitalWrite(7,LOW
+  digitalWrite(7,LOW);
                
   }
 }
