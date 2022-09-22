@@ -12,7 +12,7 @@ void loop()
   // TEMPRATURE SENSOR
   
   double a=analogRead(A2);
-  double v=(((a/1024)*5)*100);
+  double v=(((a/1024)*5)-0.5)*100;
   Serial.print("ROOM TEMPERATURE IS:");
   Serial.println(v);
   delay(1000);
@@ -35,7 +35,7 @@ void loop()
     Serial.print("MOTION:");
     Serial.println(B);
   
-  if(B==0)
+  if(B==1)
     
   {
     
